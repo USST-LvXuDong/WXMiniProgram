@@ -1,0 +1,12 @@
+<!--main.wxml-->
+<import src="../common/copyright.wxml" />
+<view class="container">
+  <view class="qfxinfo">
+		<image class="qfxLogoImg" src="../../image/qfxLogo.png"></image>
+    <text>{{InfoText}}</text>
+  </view>
+	<view class="QfxInfo">
+		<text class="mainQfxInfo">{{main_QfxInfo}}</text>
+	</view>
+	<template is="Copyright" data="{{Copyright_text: 'Copyright © 2013-2017 USST.吕旭东 All Rights Reserved.'}}" />
+</view>

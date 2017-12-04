@@ -1,0 +1,3 @@
+<template name="Copyright">
+		<text class="Copyright">{{Copyright_text}}</text>
+</template>

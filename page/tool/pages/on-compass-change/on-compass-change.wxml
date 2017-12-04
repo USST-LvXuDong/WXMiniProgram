@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section_center">
+      <view class="direction">
+        <view class="bg-compass-line"></view>
+        <image class="bg-compass" src="compass.png" style="transform: rotate({{direction}}deg)"></image>
+        <view class="direction-value">
+          <text>{{direction}}</text>
+          <text class="direction-degree">o</text>
+        </view>
+      </view>
+    </view>
+		<view class="direction-text" wx:if="{{direction > 23 && direction < 68}}"> 东北 </view>
+		<view class="direction-text" wx:elif="{{direction >= 68 && direction < 113}}"> 东 </view>
+		<view class="direction-text" wx:elif="{{direction >= 113 && direction < 158}}"> 东南 </view>
+		<view class="direction-text" wx:elif="{{direction >= 158 && direction < 203}}"> 南 </view>
+		<view class="direction-text" wx:elif="{{direction >= 203 && direction < 248}}"> 西南 </view>
+		<view class="direction-text" wx:elif="{{direction >= 248 && direction < 293}}"> 西 </view>
+		<view class="direction-text" wx:elif="{{direction >= 293 && direction < 338}}">  西北</view>
+		<view class="direction-text" wx:else> 北 </view>
+  </view>
+</view>
